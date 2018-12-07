@@ -1,6 +1,13 @@
 <?php $selected = "cats";?>
 <?php require_once('../../../private/initialize.php'); ?>
 <?php require_once(INCLUDES_PATH.'/admin_header.php'); ?>
+
+<?php
+//echo WWW_ROOT; exit();
+if(!$session->is_logged_in())
+    redirect_to(WWW_ROOT.'index.php');
+ ?>
+
 <div class="container">
   <a href="new.php">New Category</a>
   <table class="table">
