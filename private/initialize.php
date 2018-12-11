@@ -9,12 +9,22 @@
   $doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
   define("WWW_ROOT", $doc_root);
 
+  require_once("functions.php");
   require_once("models/MenuItem.class.php");
   require_once("database_functions.php");
   require_once("models/Category.class.php");
+  require_once("models/Admin.class.php");
+  require_once("models/Session.class.php");
+
+
+  $session = new Session();
 
   $db = db_connect();
   Category::set_database($db);
+<<<<<<< HEAD
   MenuItem::set_database($db);
+=======
+  Admin::set_database($db);
+>>>>>>> 902292ca640b95d08ae7db56ee888e9a99875024
 
 ?>
