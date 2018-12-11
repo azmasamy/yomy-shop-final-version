@@ -4,9 +4,8 @@
 
 <div class="container">
 <?php
-/*
-echo "inserting new admin". "</br>";
-
+  /*
+  //echo "inserting new admin". "</br>";
   $args['first_name'] = "Mohammed";
   $args['last_name'] = "Saudi";
   $args['email'] = "msaudi.cse@gmail.com";
@@ -17,7 +16,7 @@ echo "inserting new admin". "</br>";
   $admin = new Admin($args);
   $result = $admin->create();
   var_dump($result);
-*/
- ?>
 
+ ?>
+ */
 </div> <!-- END DIV CONTAINER-->

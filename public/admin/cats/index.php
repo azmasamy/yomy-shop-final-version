@@ -5,7 +5,7 @@
 <?php
 //echo WWW_ROOT; exit();
 if(!$session->is_logged_in())
-    redirect_to(WWW_ROOT.'index.php');
+    redirect_to(WWW_ROOT.'login.php');
  ?>
 
 <div class="container">

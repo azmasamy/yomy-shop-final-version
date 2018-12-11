@@ -6,7 +6,7 @@
 
 <?php
   if($session->is_logged_in())
-    echo "Loggedin, ". "<a href='logout.php'> logout </a>";
+    echo "Logged in, ". "<a href='logout.php'> logout </a>";
     else {
       echo "Login, ". "<a href='login.php'> login </a>";
     }

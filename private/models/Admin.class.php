@@ -32,7 +32,7 @@ class Admin {
     $sql .="'" . $this->hashed_password ."'";
     $sql .=");";
 
-    echo $sql;
+    //echo $sql;
 
     $result = self::$database->query($sql);
     if($result){
@@ -104,6 +104,7 @@ class Admin {
     }
 
 public function verify_password($password) {
+    //password_verify built in function 
     return password_verify($password, $this->hashed_password);
   }
   public function full_name() {

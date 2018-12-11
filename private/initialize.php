@@ -17,16 +17,6 @@
   require_once("models/Session.class.php");
 
 
-  function is_post_request() {
-    return $_SERVER['REQUEST_METHOD'] == 'POST';
-  }
-
-  function is_get_request() {
-    return $_SERVER['REQUEST_METHOD'] == 'GET';
-  }
-
-
-
   $session = new Session();
 
   $db = db_connect();
